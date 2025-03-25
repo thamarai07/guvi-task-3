@@ -186,6 +186,7 @@ body {
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    border-radius: 10px;
 }
 
 .card_inner {
@@ -214,14 +215,20 @@ body {
 .card_front {
     padding: 20px;
     background-color: #bbb;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: all 0.5s;
+
 }
 
+.card_front:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
 .card_back {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
 }
 
-.card_back img{
-    width: 100%;
-}
